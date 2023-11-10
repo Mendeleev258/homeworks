@@ -38,7 +38,7 @@ int main()
                 // task 2
                 double eps, res;
                 int i = 0;
-                Read_and_check(eps, [](double x) -> bool {return true; }, "Введите точность вычисления: ");
+                Read_and_check(eps, [](double x) -> bool {return x > 0 && x < 1; }, "Введите точность вычисления: ");
                 
                 res = sumseries(x, eps, i);
                 
